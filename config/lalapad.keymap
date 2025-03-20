@@ -173,6 +173,24 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        scalling_down_up: scalling_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LG(MINUS)>, <&kp LS(LG(EQUAL))>;
+
+            tap-ms = <20>;
+            label = "SCALLING_DOWN_UP";
+        };
+
+        bright_down_up: bright_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_BRI_DEC>, <&kp LS(LG(C_BRI_UP))>;
+
+            tap-ms = <20>;
+            label = "BRIGHT_DOWN_UP";
+        };
     };
 
     macros {
@@ -202,7 +220,7 @@
 
         SECONDARY_LAYER {
             display-name = "numpad_layer";
-            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_right_left>, <&scroll_left_right>;
 
             bindings = <
 &kp ESCAPE      &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5      &kp NUMBER_6  &kp N7         &kp N8         &kp N9            &kp N0        &mt EQUAL MINUS
@@ -222,11 +240,13 @@
 &trans       &trans  &trans  &trans  &trans  &trans             &trans            &trans        &trans        &trans         &trans  &trans
                      &trans  &trans  &trans  &trans             &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
             >;
+
+            sensor-bindings = <&scalling_down_up>;
         };
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+            sensor-bindings = <&bright_down_up>, <&volume_up_down>;
 
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
