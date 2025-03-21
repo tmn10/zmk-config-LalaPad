@@ -215,6 +215,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        screenshot {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <37 38>;
+        };
+
+        screencapture {
+            bindings = <&kp LS(LG(N5))>;
+            key-positions = <36 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -223,11 +237,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W              &kp E                        &kp R        &mt2 TILDE T        &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P       &kp BACKSPACE
-&kp TAB       &mt2 AT A            &mt2 HASH S                       &mt2 DOLLAR D                &kp F        &kp G               &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS     &maru_kakko
-&kp LSHFT     &kp Z                &kp X                             &kp C                        &kp V        &mt2 EXCLAMATION B  &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &mt2 SLASH UP_ARROW  &kaku_kakko
-&kp LEFT_ALT  &kp LCTRL            &mt2 LS(LG(N5)) LG(LS(NUMBER_4))  &mt LEFT_COMMAND LANGUAGE_2  &lt 1 SPACE  &lt 4 LANG2         &lt SYSTEM_LAYER LANG1  &kp ENTER          &lt 2 LANGUAGE_1      &mt2 SLASH LEFT    &mt2 PIPE DOWN       &mt2 BACKSLASH RIGHT
-                                   &allow_end                        &allow_pagedown              &allow_home  &allow_pageup       &allow_pageup           &allow_home        &allow_pagedown       &allow_end
+&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W         &kp E                        &kp R        &mt2 TILDE T        &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &kp BACKSPACE
+&kp TAB       &mt2 AT A            &mt2 HASH S                  &mt2 DOLLAR D                &kp F        &kp G               &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS  &maru_kakko
+&kp LSHFT     &kp Z                &kp X                        &kp C                        &kp V        &mt2 EXCLAMATION B  &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW      &kaku_kakko
+&kp LEFT_ALT  &kp LCTRL            &mt LEFT_COMMAND LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 1 SPACE  &lt 4 LANG2         &lt SYSTEM_LAYER LANG1  &kp ENTER          &lt 2 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN    &mt2 BACKSLASH RIGHT
+                                   &allow_end                   &allow_pagedown              &allow_home  &allow_pageup       &allow_pageup           &allow_home        &allow_pagedown       &allow_end
             >;
         };
 
@@ -236,11 +250,11 @@
             sensor-bindings = <&scroll_right_left>, <&scroll_left_right>;
 
             bindings = <
-&kp ESCAPE      &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5      &kp NUMBER_6  &kp N7         &kp N8         &kp N9            &kp N0        &mt EQUAL MINUS
-&kp TAB         &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8  &kp NUMBER_9           &kp NUMBER_0      &kp PLUS      &kp MINUS      &kp ASTERISK   &kp SLASH         &kp EQUAL     &trans
-&kp LEFT_SHIFT  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &trans        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp COLON     &kp SEMICOLON  &kp LESS_THAN  &kp GREATER_THAN  &kp UP_ARROW  &trans
-&trans          &trans         &trans                &trans        &trans                 &trans            &trans        &kp ENTER      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT
-                               &trans                &trans        &trans                 &trans            &trans        &trans         &trans         &trans
+&trans  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7         &kp N8         &kp N9            &kp N0        &mt EQUAL MINUS
+&trans  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS      &kp ASTERISK   &kp SLASH         &kp EQUAL     &trans
+&trans  &kp LEFT_BRACE    &kp LESS_THAN         &trans        &kp GREATER_THAN       &kp RIGHT_BRACE    &kp COLON     &kp SEMICOLON  &kp LESS_THAN  &kp GREATER_THAN  &kp UP_ARROW  &trans
+&trans  &trans            &trans                &trans        &trans                 &trans             &trans        &kp ENTER      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT
+                          &trans                &trans        &trans                 &trans             &trans        &trans         &trans         &trans
             >;
         };
 
