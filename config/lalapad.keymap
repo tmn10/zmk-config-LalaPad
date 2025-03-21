@@ -209,10 +209,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W              &kp E             &kp R        &mt2 TILDE T              &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P        &mt2 EQUAL MINUS
-&kp TAB       &mt2 AT A            &mt2 HASH S                       &mt2 DOLLAR D     &kp F        &kp G                     &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 LEFT_BRACE LBKT  &mt2 RIGHT_BRACE RBKT
-&kp LSHFT     &kp Z                &kp X                             &kp C             &kp V        &mt2 EXCLAMATION B        &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &mt2 SLASH UP_ARROW   &mt2 BSLH PIPE
-&kp LEFT_ALT  &kp LCTRL            &mt2 LS(LG(N5)) LG(LS(NUMBER_4))  &kp LEFT_COMMAND  &lt 1 SPACE  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp ENTER          &kp BACKSPACE         &kp LEFT           &kp DOWN              &kp RIGHT
+&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W              &kp E             &kp R        &mt2 TILDE T              &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P       &mt2 LEFT_BRACE LEFT_BRACKET
+&kp TAB       &mt2 AT A            &mt2 HASH S                       &mt2 DOLLAR D     &kp F        &kp G                     &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS     &mt2 RIGHT_BRACE RBKT
+&kp LSHFT     &kp Z                &kp X                             &kp C             &kp V        &mt2 EXCLAMATION B        &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &mt2 SLASH UP_ARROW  &mt2 BSLH PIPE
+&kp LEFT_ALT  &kp LCTRL            &mt2 LS(LG(N5)) LG(LS(NUMBER_4))  &kp LEFT_COMMAND  &lt 1 SPACE  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp ENTER          &kp BACKSPACE         &kp LEFT           &kp DOWN             &kp RIGHT
                                    &allow_end                        &allow_pagedown   &allow_home  &allow_pageup             &allow_pageup           &allow_home        &allow_pagedown       &allow_end
             >;
         };
