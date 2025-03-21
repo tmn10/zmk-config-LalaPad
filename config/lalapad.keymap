@@ -259,11 +259,11 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(Z)             &kp LG(X)      &kp LG(C)  &kp LG(V)              &kp LG(LA(V))    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK      &mkp RCLK  &kp LG(RIGHT_BRACKET)  &mkp RCLK        &mo SCROLL_R_LAYER
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &kp PAGE_DOWN  &mkp MB3   &trans                 &allow_pageup    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans         &trans     &trans                 &allow_pagedown  &trans
-                &trans  &trans  &trans  &trans  &trans                &trans         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(Z)             &kp LG(X)       &kp LG(C)  &kp LG(V)              &kp LG(LA(V))    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK       &mkp RCLK  &kp LG(RIGHT_BRACKET)  &mkp RCLK        &mo SCROLL_R_LAYER
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &kp LEFT_SHIFT  &mkp MB3   &trans                 &allow_pageup    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans          &trans     &trans                 &allow_pagedown  &trans
+                &trans  &trans  &trans  &trans  &trans                &trans          &trans     &trans
             >;
         };
 
