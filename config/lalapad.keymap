@@ -244,11 +244,11 @@
             sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W         &kp E                        &kp R        &mt2 TILDE T        &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &maru_kakko
-&kp TAB       &mt2 AT A            &mt2 HASH S                  &mt2 DOLLAR D                &kp F        &kp G               &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS  &kaku_kakko
-&kp LSHFT     &kp Z                &kp X                        &kp C                        &kp V        &mt2 EXCLAMATION B  &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW      &bigger_kakko
-&kp LEFT_ALT  &kp LCTRL            &mt LEFT_COMMAND LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &lt 2 LANG2         &lt SYSTEM_LAYER LANG1  &kp ENTER          &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN    &mt2 BACKSLASH RIGHT
-                                   &allow_end                   &allow_pagedown              &allow_home  &allow_pageup       &allow_pageup           &allow_home        &allow_pagedown       &allow_end
+&kp ESCAPE    &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T        &kp Y                   &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &maru_kakko
+&kp TAB       &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G               &mt2 QUESTION H         &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS  &kaku_kakko
+&kp LSHFT     &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B  &mt2 AMPERSAND N        &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW      &bigger_kakko
+&kp LEFT_ALT  &kp LCTRL            &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &lt 2 LANG2         &lt SYSTEM_LAYER LANG1  &kp ENTER          &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN    &mt2 BACKSLASH RIGHT
+                                   &allow_end                 &allow_pagedown              &allow_home  &allow_pageup       &allow_pageup           &allow_home        &allow_pagedown       &allow_end
             >;
         };
 
