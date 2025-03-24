@@ -307,7 +307,7 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&bright_down_up>, <&volume_up_down>;
+            sensor-bindings = <&scalling_down_up>, <&volume_up_down>;
 
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -321,11 +321,11 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&word   &trans  &kp LEFT_WIN  &kp LS(TAB)   &kp LC(UP_ARROW)   &kp TAB        &kp LG(Z)             &kp LG(X)  &kp LG(C)       &kp LG(V)              &kp LG(LA(V))    &trans
-&trans  &trans  &trans        &kp LC(LEFT)  &kp LC(LA(LG(L)))  &kp LC(RIGHT)  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &mkp RCLK        &mo 5
-&trans  &trans  &kp LEFT_ALT  &kp LS(TAB)   &kp LG(LA(SPACE))  &kp TAB        &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
-&trans  &trans  &trans        &trans        &trans             &trans         &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
-                &trans        &trans        &trans             &trans         &trans                &trans     &trans          &trans
+&word   &trans  &trans  &trans        &kp LC(UP_ARROW)   &trans         &kp LG(Z)             &kp LG(X)  &kp LG(C)       &kp LG(V)              &kp LG(LA(V))    &trans
+&trans  &trans  &trans  &kp LC(LEFT)  &kp LC(LA(LG(L)))  &kp LC(RIGHT)  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &mkp RCLK        &mo 5
+&trans  &trans  &trans  &trans        &kp LG(LA(SPACE))  &trans         &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
+&trans  &trans  &trans  &trans        &trans             &trans         &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
+                &trans  &trans        &trans             &trans         &trans                &trans     &trans          &trans
             >;
 
             sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
