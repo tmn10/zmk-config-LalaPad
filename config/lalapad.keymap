@@ -239,6 +239,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 38>;
         };
+
+        taskmanager {
+            bindings = <&kp LA(LG(ESCAPE))>;
+            key-positions = <12 38>;
+        };
     };
 
     keymap {
