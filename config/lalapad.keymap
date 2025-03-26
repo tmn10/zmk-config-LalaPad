@@ -251,7 +251,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
 &kp LA(LS(LC(T)))   &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &maru_kakko
@@ -264,7 +264,7 @@
 
         SECONDARY_LAYER {
             display-name = "numpad_layer";
-            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
 &trans  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7         &kp N8         &kp N9          &kp N0        &mt EQUAL MINUS
@@ -324,7 +324,7 @@
                 &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         iPad_default_layer {
