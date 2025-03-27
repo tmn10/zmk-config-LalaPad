@@ -254,10 +254,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
-&kp LA(LS(LC(T)))   &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &maru_kakko
-&kp TAB             &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 EQUAL MINUS  &kaku_kakko
-&kp LSHFT           &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW      &bigger_kakko
-&mt2 LEFT_ALT LEFT  &mt2 LCTRL RIGHT     &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 5 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN    &mt2 BACKSLASH RIGHT
+&kp LA(LS(LC(T)))   &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P         &maru_kakko
+&kp TAB             &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 UNDERSCORE MINUS  &kaku_kakko
+&kp LSHFT           &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW           &bigger_kakko
+&mt2 LEFT_ALT LEFT  &mt2 LCTRL RIGHT     &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 5 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
                                          &allow_end                 &allow_pagedown              &allow_home  &allow_pageup                    &allow_pageup     &allow_home        &allow_pagedown       &allow_end
             >;
         };
@@ -267,11 +267,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
-&trans  &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7         &kp N8         &kp N9          &kp N0        &mt EQUAL MINUS
-&trans  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS      &kp ASTERISK   &kp SLASH       &kp EQUAL     &trans
-&trans  &kp LEFT_BRACE    &kp LESS_THAN         &trans        &kp GREATER_THAN       &kp RIGHT_BRACE    &kp COLON     &kp SEMICOLON  &kp COMMA      &kp PERIOD      &kp UP_ARROW  &trans
-&trans  &trans            &trans                &trans        &trans                 &trans             &trans        &kp ENTER      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
-                          &trans                &trans        &trans                 &trans             &trans        &trans         &trans         &trans
+&trans        &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7         &kp N8         &kp N9          &kp N0        &mt EQUAL MINUS
+&trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS      &kp ASTERISK   &kp SLASH       &kp EQUAL     &trans
+&trans        &kp LEFT_BRACE    &kp LESS_THAN         &trans        &kp GREATER_THAN       &kp RIGHT_BRACE    &kp COLON     &kp SEMICOLON  &kp COMMA      &kp PERIOD      &kp UP_ARROW  &trans
+&kp LEFT_ALT  &kp LEFT_CONTROL  &trans                &trans        &trans                 &trans             &trans        &kp ENTER      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+                                &trans                &trans        &trans                 &trans             &trans        &trans         &trans         &trans
             >;
         };
 
