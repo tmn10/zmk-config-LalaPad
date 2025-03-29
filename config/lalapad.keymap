@@ -317,11 +317,11 @@
         mouse_contrall_layer {
             display-name = "right_mouse_layer";
             bindings = <
-&word   &word   &trans  &trans  &trans  &trans  &trans                &kp LG(C)  &kp LG(V)       &kp LG(LA(V))          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
-                &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans
+&word   &word        &trans  &trans  &trans  &trans            &trans                &kp LG(C)  &kp LG(V)       &kp LG(LA(V))          &trans           &trans
+&trans  &kp TAB      &trans  &trans  &trans  &kp LEFT_COMMAND  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &trans           &trans
+&trans  &kp LS(TAB)  &trans  &trans  &trans  &kp LEFT_ALT      &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
+&trans  &trans       &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
+                     &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
