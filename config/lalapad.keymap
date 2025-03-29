@@ -244,6 +244,11 @@
             bindings = <&kp LA(LG(ESCAPE))>;
             key-positions = <38 13>;
         };
+
+        sleep {
+            bindings = <&kp K_POWER>;
+            key-positions = <2 38>;
+        };
     };
 
     keymap {
