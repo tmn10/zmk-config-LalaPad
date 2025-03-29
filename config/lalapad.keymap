@@ -246,12 +246,12 @@
         };
 
         sleep {
-            bindings = <&kp K_POWER>;
+            bindings = <&kp LS(LC(K_POWER))>;
             key-positions = <38 14>;
         };
 
         sleep2 {
-            bindings = <&kp K_POWER>;
+            bindings = <&kp C_AL_LOCK>;
             key-positions = <38 2>;
         };
     };
@@ -329,7 +329,7 @@
             bindings = <
 &word   &word        &trans  &trans  &trans  &trans            &trans                &kp LG(C)  &kp LG(V)       &kp LG(LA(V))          &trans           &trans
 &trans  &kp TAB      &trans  &trans  &trans  &kp LEFT_COMMAND  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &trans           &trans
-&trans  &kp LS(TAB)  &trans  &trans  &trans  &kp LEFT_ALT      &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
+&trans  &kp LS(TAB)  &trans  &trans  &trans  &kp LEFT_CONTROL  &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
 &trans  &trans       &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
                      &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans
             >;
