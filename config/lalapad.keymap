@@ -321,7 +321,7 @@
                      &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans
             >;
 
-            sensor-bindings = <&bright_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&bright_down_up>, <&volume_up_down>;
         };
 
         MOUSE_R_LAYER {
