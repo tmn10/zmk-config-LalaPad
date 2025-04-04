@@ -260,15 +260,14 @@
 &kp LA(LS(LC(T)))  &mt2 SINGLE_QUOTE Q   &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P         &maru_kakko
 &kp TAB            &mt2 AT A             &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 UNDERSCORE MINUS  &kaku_kakko
 &kp LSHFT          &kp Z                 &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW           &bigger_kakko
-&mt LCTRL TAB      &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
+&mt LCTRL TAB      &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 5 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
                                          &allow_end                 &allow_pagedown              &allow_home  &allow_pageup                    &allow_pageup     &allow_home        &allow_pagedown       &allow_end
             >;
         };
 
         SECONDARY_LAYER {
             display-name = "numpad_layer";
-            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
-
+            sensor-bindings = <&scalling_down_up>;
             bindings = <
 &trans        &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7         &kp N8         &kp N9          &kp N0        &mt EQUAL MINUS
 &trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS      &kp ASTERISK   &kp SLASH       &kp EQUAL     &trans
@@ -293,7 +292,7 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scalling_down_up>, <&volume_up_down>;
+            sensor-bindings = <&bright_down_up>, <&volume_up_down>;
 
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -302,19 +301,6 @@
 &trans  &trans        &trans        &trans        &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
                       &trans        &trans        &trans      &trans          &trans  &trans  &trans  &trans
             >;
-        };
-
-        mouse_contrall_layer {
-            display-name = "right_mouse_layer";
-            bindings = <
-&word   &word        &trans  &trans  &trans  &trans            &trans                &kp LG(C)  &kp LG(V)       &kp LG(LA(V))          &trans           &trans
-&trans  &kp TAB      &trans  &trans  &trans  &kp LEFT_COMMAND  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &trans           &trans
-&trans  &kp LS(TAB)  &trans  &trans  &trans  &kp LEFT_CONTROL  &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
-&trans  &trans       &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
-                     &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans
-            >;
-
-            sensor-bindings = <&bright_down_up>, <&volume_up_down>;
         };
 
         MOUSE_R_LAYER {
@@ -327,7 +313,20 @@
                 &trans  &trans  &trans  &trans  &trans  &trans     &trans          &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
+        };
+
+        mouse_contrall_layer {
+            display-name = "right_mouse_layer";
+            bindings = <
+&word   &word        &trans  &trans  &trans  &trans            &trans                &kp LG(C)  &kp LG(V)       &kp LG(LA(V))          &trans           &trans
+&trans  &kp TAB      &trans  &trans  &trans  &kp LEFT_COMMAND  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(RIGHT_BRACKET)  &trans           &trans
+&trans  &kp LS(TAB)  &trans  &trans  &trans  &kp LEFT_CONTROL  &kp LG(R)             &mkp MB3   &kp LEFT_SHIFT  &trans                 &allow_pageup    &trans
+&trans  &trans       &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans                 &allow_pagedown  &trans
+                     &trans  &trans  &trans  &trans            &trans                &trans     &trans          &trans
+            >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         iPad_default_layer {
