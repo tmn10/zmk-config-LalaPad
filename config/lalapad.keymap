@@ -280,10 +280,10 @@
         KIGOU_LAYER {
             display-name = "window_layer";
             bindings = <
-&word   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans      &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans         &kp PERCENT  &trans
-&trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans         &kp UNDER    &trans
-&trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans         &trans       &trans
-&trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &trans         &trans       &trans
+&word   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans      &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans                &kp PERCENT    &trans
+&trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans                &kp UNDER      &trans
+&trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans                &kp PAGE_UP    &trans
+&trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN  &kp LG(RBKT)
                           &trans             &trans      &trans  &trans           &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
             >;
 
