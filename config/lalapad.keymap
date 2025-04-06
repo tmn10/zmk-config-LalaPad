@@ -257,11 +257,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
-&kp LA(LS(LC(T)))  &mt2 SINGLE_QUOTE Q   &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P         &maru_kakko
-&kp TAB            &mt2 AT A             &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 UNDERSCORE MINUS  &kaku_kakko
-&kp LSHFT          &kp Z                 &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &lt 4 UP_ARROW         &bigger_kakko
-&mt LCTRL TAB      &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 5 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
-                                         &allow_front               &allow_pagedown              &allow_back  &allow_pageup                    &allow_pageup     &allow_back        &allow_pagedown       &allow_front
+&kp LA(LS(LC(T)))  &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P         &maru_kakko
+&kp TAB            &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 UNDERSCORE MINUS  &mo 4
+&kp LS(TAB)        &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP                 &mo 4
+&kp LCTRL          &kp LEFT_ALT         &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 5 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
+                                        &allow_front               &allow_pagedown              &allow_back  &allow_pageup                    &allow_pageup     &allow_back        &allow_pagedown       &allow_front
             >;
         };
 
