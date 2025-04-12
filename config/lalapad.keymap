@@ -269,11 +269,11 @@
             display-name = "numpad_layer";
             sensor-bindings = <&scalling_down_up>;
             bindings = <
-&trans        &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3                  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7     &kp N8                &kp N9             &kp N0        &mt EQUAL MINUS
-&trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS  &kp ASTERISK          &kp SLASH          &kp EQUAL     &trans
-&trans        &kp LEFT_BRACE    &kp LESS_THAN         &trans                        &kp GREATER_THAN       &kp RIGHT_BRACE    &trans        &trans     &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW  &trans
-&kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT        &mt2 LEFT_COMMAND LANGUAGE_1  &trans                 &trans             &trans        &trans     &trans                &kp LEFT_ARROW     &kp DOWN      &kp RIGHT
-                                &trans                &trans                        &trans                 &trans             &trans        &trans     &trans                &trans
+&trans        &kp NUMBER_1      &kp NUMBER_2                &kp NUMBER_3                  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7     &kp N8                &kp N9             &kp N0        &mt EQUAL MINUS
+&trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS        &trans                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS  &kp ASTERISK          &kp SLASH          &kp EQUAL     &trans
+&trans        &kp LEFT_BRACE    &kp LESS_THAN               &trans                        &kp GREATER_THAN       &kp RIGHT_BRACE    &trans        &trans     &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW  &trans
+&kp LEFT_ALT  &kp LEFT_CONTROL  &mt2 LEFT_SHIFT LANGUAGE_2  &mt2 LEFT_COMMAND LANGUAGE_1  &trans                 &trans             &trans        &trans     &trans                &kp LEFT_ARROW     &kp DOWN      &kp RIGHT
+                                &trans                      &trans                        &trans                 &trans             &trans        &trans     &trans                &trans
             >;
         };
 
