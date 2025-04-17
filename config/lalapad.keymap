@@ -257,10 +257,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
-&kp LC(LEFT)  &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P         &kp LC(RIGHT)
-&kp TAB       &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L              &mt2 UNDERSCORE MINUS  &mo 4
-&kp LS(TAB)   &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP                 &kp BACKSPACE
-&kp LCTRL     &kp LEFT_ALT         &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 SLASH LEFT    &mt2 PIPE DOWN         &mt2 BACKSLASH RIGHT
+&kp LC(LEFT)  &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &kp E                        &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O                       &mt2 PERCENT P         &kp LC(RIGHT)
+&kp TAB       &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L                       &mt2 UNDERSCORE MINUS  &mo 4
+&kp LS(TAB)   &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD           &mt2 PAGE_UP UP_ARROW  &kp BACKSPACE
+&kp LCTRL     &kp LEFT_ALT         &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 2 ENTER        &lt 1 BACKSPACE       &mt2 LG(LEFT_BRACKET) LEFT  &mt2 PAGE_DOWN DOWN    &mt2 LG(RIGHT_BRACKET) RIGHT
                                    &allow_front               &allow_pagedown              &allow_back  &allow_pageup                    &allow_pageup     &allow_back        &allow_pagedown       &allow_front
             >;
         };
@@ -280,10 +280,10 @@
         KIGOU_LAYER {
             display-name = "window_layer";
             bindings = <
-&trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans      &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans                &kp PERCENT    &trans
-&trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans                &kp UNDER      &trans
-&trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans                &kp PAGE_UP    &trans
-&trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN  &kp LG(RBKT)
+&trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans         &kp PERCENT  &trans
+&trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans         &kp UNDER    &trans
+&trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans         &kp PAGE_UP  &trans
+&trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &kp SLASH      &kp PIPE     &kp BACKSLASH
                           &trans             &trans      &trans  &trans           &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
             >;
 
