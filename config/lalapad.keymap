@@ -269,9 +269,9 @@
             display-name = "numpad_layer";
             sensor-bindings = <&scalling_down_up>;
             bindings = <
-&trans        &kp NUMBER_1      &kp NUMBER_2                &kp NUMBER_3                  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7     &kp N8                &kp N9             &kp N0        &trans
-&trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS        &trans                        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS  &kp ASTERISK          &kp SLASH          &kp EQUAL     &trans
-&trans        &kp LEFT_BRACE    &kp LESS_THAN               &trans                        &kp GREATER_THAN       &kp RIGHT_BRACE    &trans        &trans     &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW  &trans
+&none         &kp NUMBER_1      &kp NUMBER_2                &kp NUMBER_3                  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7     &kp N8                &kp N9             &kp N0        &none
+&trans        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS        &none                         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS      &kp MINUS  &kp ASTERISK          &kp SLASH          &kp EQUAL     &trans
+&trans        &kp LEFT_BRACE    &kp LESS_THAN               &none                         &kp GREATER_THAN       &kp RIGHT_BRACE    &trans        &trans     &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW  &trans
 &kp LEFT_ALT  &kp LEFT_CONTROL  &mt2 LEFT_SHIFT LANGUAGE_2  &mt2 LEFT_COMMAND LANGUAGE_1  &trans                 &trans             &trans        &trans     &trans                &kp LEFT_ARROW     &kp DOWN      &kp RIGHT
                                 &trans                      &trans                        &trans                 &trans             &trans        &trans     &trans                &trans
             >;
@@ -280,7 +280,7 @@
         KIGOU_LAYER {
             display-name = "window_layer";
             bindings = <
-&trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans         &kp PERCENT  &trans
+&none   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans         &kp PERCENT  &none
 &trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans         &kp UNDER    &trans
 &trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans         &kp PAGE_UP  &trans
 &trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &kp SLASH      &kp PIPE     &kp BACKSLASH
@@ -295,7 +295,7 @@
             sensor-bindings = <&bright_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans        &trans        &trans        &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans      &word           &trans  &trans  &trans  &trans  &trans  &trans
@@ -306,10 +306,10 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &trans     &trans          &kp LG(C)  &kp LG(V)      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(X)  &kp LG(LA(V))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp MB3   &kp LEFT_SHIFT  &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &none      &none           &kp LG(C)  &kp LG(V)      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(X)  &kp LG(LA(V))  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &none                 &mkp MB3   &kp LEFT_SHIFT  &none      &none          &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp ENTER  &kp BACKSPACE   &none      &none          &none
                 &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans
             >;
 
