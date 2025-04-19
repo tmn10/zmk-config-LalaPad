@@ -67,6 +67,24 @@
 
 / {
     behaviors {
+        // タップダンス: 1回タップでoption+l、2回タップでoption+i、2回タップ後ホールドでlayer 3
+        td_opt_l_i_layer3: tap_dance_opt_l_i_layer3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_OPT_L_I_LAYER3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LA(L)>, <&td_opt_i_layer3>;
+        };
+
+        // 2回目のタップとホールドの動作を定義
+        td_opt_i_layer3: tap_dance_opt_i_layer3_construct {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_DANCE_OPT_I_LAYER3_HOLD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&mo 3>, <&kp LA(I)>;
+        };
         // Encoder to Mouse Scroll
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
