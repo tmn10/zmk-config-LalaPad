@@ -3,28 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      
-      - name: Setup File Contents
-        run: |
-          if [ -f config/tapdance_config.txt ]; then
-            echo "タップダンス設定ファイルが見つかりました"
-            # keymapファイルの内容を表示
-            cat config/lalapad.keymap
-            
-            # behaviors セクションを検索
-            if grep -q "behaviors {" config/lalapad.keymap; then
-              echo "behaviorsセクションが見つかりました"
-            else
-              echo "behaviorsセクションが見つかりません"
-            fi
-          else
-            echo "タップダンス設定ファイルが見つかりません"
-          fi
-      
-      # ZMK標準ビルドワークフローを呼び出す
-      - name: Build ZMK firmware
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
