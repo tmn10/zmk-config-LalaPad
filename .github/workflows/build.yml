@@ -1,6 +1,36 @@
-name: Build ZMK firmware
+name: Build ZMK firmware with Tapdance
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Merge Tapdance Configuration
+        run: |
+          if [ -f config/tapdance_config.txt ]; then
+            # 現在のkeymapファイルを見つける
+            KEYMAP_FILE="config/lalapad.keymap"
+            
+            # ファイルバックアップ
+            cp "$KEYMAP_FILE" "$KEYMAP_FILE.bak"
+            
+            # 既存のbehaviorsセクションを探す
+            if grep -q "behaviors {" "$KEYMAP_FILE"; then
+              # behaviorセクションに追加
+              sed -i '/behaviors {/r config/tapdance_config.txt' "$KEYMAP_FILE"
+              echo "既存のbehaviorsセクションにタップダンス設定を追加しました"
+            else
+              # behaviorセクションがない場合は作成 (ZMKの一般的なパターンに合わせる)
+              sed -i '/#include <dt-bindings\/zmk\/pointing.h>/a \\n\/ {\n    behaviors {\n'"$(cat config/tapdance_config.txt)"'\n    };\n' "$KEYMAP_FILE"
+              echo "behaviorsセクションを新規作成しタップダンス設定を追加しました"
+            fi
+          else
+            echo "タップダンス設定ファイルが見つかりません"
+          fi
+      
+      # ZMK標準ビルドワークフローを呼び出す
+      - name: Build ZMK firmware
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
