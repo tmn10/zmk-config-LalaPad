@@ -313,11 +313,11 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &none      &none           &kp LG(C)  &kp LG(V)      &none
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &kp LG(X)  &kp LG(LA(V))  &none
-&trans  &trans  &trans  &trans  &trans  &trans  &none                 &mkp MB3   &kp LEFT_SHIFT  &none      &none          &none
-&trans  &trans  &trans  &trans  &mo 4   &trans  &trans                &kp ENTER  &kp BACKSPACE   &none      &none          &none
-                &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &kp LG(R)             &none          &kp LG(C)       &kp LG(V)      &none
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &kp LG(LEFT_BRACKET)  &mkp LCLK      &mkp RCLK       &kp LG(LA(V))  &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none                 &mkp MCLK      &kp LEFT_SHIFT  &none          &none
+&trans  &trans  &trans  &trans  &mo 4   &trans  &trans  &kp ENTER             &kp BACKSPACE  &none           &none          &none
+                &trans  &trans  &trans  &trans  &trans  &trans                &trans         &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
