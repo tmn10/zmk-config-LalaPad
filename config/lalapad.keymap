@@ -195,6 +195,15 @@
             #binding-cells = <0>;
             bindings = <&kp LA(SPACE)>, <&kp LA(E)>, <&mo 3>;
         };
+
+        window_left_right: window_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(LEFT_ARROW)>, <&kp LC(RIGHT)>;
+
+            tap-ms = <10>;
+            label = "WINDOW_LEFT_RIGHT";
+        };
     };
 
     macros {
@@ -320,7 +329,7 @@
                 &trans  &trans  &trans  &trans  &trans                &trans     &trans           &trans
             >;
 
-            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
+            sensor-bindings = <&window_left_right>, <&scroll_up_down>;
         };
 
         mouse_contrall_layer {
