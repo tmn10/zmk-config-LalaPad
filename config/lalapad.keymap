@@ -296,11 +296,11 @@
         KIGOU_LAYER {
             display-name = "window_layer";
             bindings = <
-&none   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &trans  &kp TILDE        &trans            &kp UNDER     &trans        &trans         &kp PERCENT  &none
-&trans  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &trans  &trans           &kp QUESTION      &trans        &trans        &trans         &kp UNDER    &trans
-&trans  &trans            &trans             &trans      &trans  &kp EXCLAMATION  &kp AMPERSAND     &trans        &trans        &trans         &kp PAGE_UP  &trans
-&trans  &trans            &trans             &trans      &trans  &trans           &trans            &trans        &trans        &kp SLASH      &kp PIPE     &kp BACKSLASH
-                          &trans             &trans      &trans  &trans           &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
+&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &none  &kp TILDE        &none             &kp UNDER     &none         &none          &kp PERCENT  &none
+&none  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &none  &none            &kp QUESTION      &none         &none         &none          &kp UNDER    &none
+&none  &none             &none              &none       &none  &kp EXCLAMATION  &kp AMPERSAND     &none         &none         &none          &kp PAGE_UP  &none
+&none  &none             &none              &none       &none  &none            &none             &none         &none         &kp SLASH      &kp PIPE     &kp BACKSLASH
+                         &none              &none       &none  &none            &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
             >;
 
             sensor-bindings = <&scalling_down_up>;
@@ -311,22 +311,22 @@
             sensor-bindings = <&bright_down_up>, <&volume_up_down>;
 
             bindings = <
-&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans      &trans          &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans        &trans        &trans        &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans      &word           &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans        &trans        &trans      &trans          &trans  &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none       &none           &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &bt BT_CLR  &bt BT_CLR_ALL  &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none       &none           &none  &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none       &word           &none  &none  &none  &none  &none  &none
+                     &none         &none         &none       &none           &none  &none  &none  &none
             >;
         };
 
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &none                 &kp LG(R)  &msc MOVE_Y(20)  &kp LG(C)       &kp LG(V)      &none
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &none      &mkp LCLK        &mkp RCLK       &kp LG(LA(V))  &mo 4
-&trans  &trans  &trans  &trans  &trans  &trans  &none                 &none      &mkp MCLK        &kp LEFT_SHIFT  &none          &none
-&trans  &trans  &trans  &trans  &mo 4   &trans  &trans                &kp ENTER  &kp BACKSPACE    &none           &none          &none
-                &trans  &trans  &trans  &trans  &trans                &trans     &trans           &trans
+&none  &kp LG(V)      &kp LG(C)       &none      &kp LG(R)  &none  &none                 &kp LG(R)  &msc MOVE_Y(20)  &kp LG(C)       &kp LG(V)      &none
+&mo 4  &kp LG(LA(V))  &mkp RCLK       &mkp LCLK  &none      &none  &kp LG(LEFT_BRACKET)  &none      &mkp LCLK        &mkp RCLK       &kp LG(LA(V))  &mo 4
+&none  &none          &kp LEFT_SHIFT  &mkp MCLK  &none      &none  &none                 &none      &mkp MCLK        &kp LEFT_SHIFT  &none          &none
+&none  &none          &none           &none      &mo 4      &none  &none                 &kp ENTER  &kp BACKSPACE    &none           &none          &none
+                      &none           &none      &none      &none  &none                 &none      &none            &none
             >;
 
             sensor-bindings = <&window_left_right>, <&scroll_up_down>;
@@ -345,7 +345,20 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
-        iPad_default_layer {
+        layer_9 {
+            display-name = "right_mouse_layer";
+            bindings = <
+&none  &kp LG(V)      &kp LG(C)       &none      &kp LG(R)  &none  &none                 &kp LG(R)  &msc MOVE_Y(20)  &kp LG(C)       &kp LG(V)      &none
+&mo 4  &kp LG(LA(V))  &mkp RCLK       &mkp LCLK  &none      &none  &kp LG(LEFT_BRACKET)  &none      &mkp LCLK        &mkp RCLK       &kp LG(LA(V))  &mo 4
+&none  &none          &kp LEFT_SHIFT  &mkp MCLK  &none      &none  &none                 &none      &mkp MCLK        &kp LEFT_SHIFT  &none          &none
+&none  &none          &none           &none      &mo 4      &none  &none                 &mo 4      &kp BACKSPACE    &none           &none          &none
+                      &none           &none      &none      &none  &none                 &none      &none            &none
+            >;
+
+            sensor-bindings = <&window_left_right>, <&scroll_up_down>;
+        };
+
+        left_mouse_layer {
             display-name = "ipad_layer";
             bindings = <
 &kp LG(H)           &mt2 SQT Q               &mt2 DOUBLE_QUOTES W        &kp E            &kp R        &mt2 TILDE T        &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O              &mt2 PERCENT P    &maru_kakko
@@ -359,11 +372,11 @@
         MOUSE_L_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 6   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
+&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
+                   &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans
             >;
         };
 
