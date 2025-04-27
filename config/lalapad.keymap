@@ -273,11 +273,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
-&lt 2 LC(LEFT)         &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &mt2 GRAVE E                 &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O                       &mt2 PERCENT P         &lt 2 LC(RIGHT_ARROW)
-&mt2 LEFT_ALT TAB      &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L                       &mt2 UNDERSCORE MINUS  &mo 4
-&mt2 LEFT_ALT LS(TAB)  &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD           &mt2 PAGE_UP UP_ARROW  &mo 2
-&kp LCTRL              &kp LEFT_ALT         &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 1 ENTER        &kp BACKSPACE         &mt2 LG(LEFT_BRACKET) LEFT  &mt2 PAGE_DOWN DOWN    &mt2 LG(RIGHT_BRACKET) RIGHT
-                                            &kp RIGHT                  &kp DOWN_ARROW               &kp LEFT     &kp UP                           &allow_pageup     &allow_back        &allow_pagedown       &allow_front
+&lt 2 LC(LEFT)        &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W       &mt2 GRAVE E                 &kp R        &mt2 TILDE T                     &kp Y             &mt2 UNDERSCORE U  &kp I                 &kp O                       &mt2 PERCENT P         &lt 2 LC(RIGHT_ARROW)
+&mt LEFT_ALT TAB      &mt2 AT A            &mt2 HASH S                &mt2 DOLLAR D                &kp F        &kp G                            &mt2 QUESTION H   &kp J              &kp K                 &kp L                       &mt2 UNDERSCORE MINUS  &mo 4
+&mt LEFT_ALT LS(TAB)  &kp Z                &kp X                      &kp C                        &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M              &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD           &mt2 PAGE_UP UP_ARROW  &mo 2
+&kp LCTRL             &kp LEFT_ALT         &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANGUAGE_1  &lt 4 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt 1 ENTER        &kp BACKSPACE         &mt2 LG(LEFT_BRACKET) LEFT  &mt2 PAGE_DOWN DOWN    &mt2 LG(RIGHT_BRACKET) RIGHT
+                                           &kp RIGHT                  &kp DOWN_ARROW               &kp LEFT     &kp UP                           &allow_pageup     &allow_back        &allow_pagedown       &allow_front
             >;
         };
 
@@ -322,11 +322,11 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&none                  &none  &none   &none   &none   &none   &none                 &kp LG(R)  &msc MOVE_Y(20)  &kp LG(C)       &kp LG(V)      &none
-&mt2 LEFT_ALT TAB      &none  &none   &none   &none   &none   &kp LG(LEFT_BRACKET)  &none      &mkp LCLK        &mkp RCLK       &kp LG(LA(V))  &mo 4
-&mt2 LEFT_ALT LS(TAB)  &none  &none   &none   &none   &none   &none                 &none      &mkp MCLK        &kp LEFT_SHIFT  &none          &none
-&none                  &none  &none   &none   &mo 4   &none   &none                 &mo 4      &kp BACKSPACE    &none           &none          &none
-                              &trans  &trans  &trans  &trans  &none                 &none      &none            &none
+&trans  &none  &none   &none   &none   &none   &none                 &kp LG(R)  &msc MOVE_Y(20)  &kp LG(C)       &kp LG(V)      &trans
+&trans  &none  &none   &none   &none   &none   &kp LG(LEFT_BRACKET)  &none      &mkp LCLK        &mkp RCLK       &kp LG(LA(V))  &mo 4
+&trans  &none  &none   &none   &none   &none   &none                 &none      &mkp MCLK        &kp LEFT_SHIFT  &none          &none
+&none   &none  &none   &none   &mo 4   &none   &none                 &trans     &trans           &none           &none          &none
+               &trans  &trans  &trans  &trans  &none                 &none      &none            &none
             >;
 
             sensor-bindings = <&window_left_right>, <&scroll_up_down>;
