@@ -323,13 +323,24 @@
             display-name = "right_mouse_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)  &trans     &kp LG(C)       &kp LG(V)      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp LCLK  &mkp RCLK       &kp LG(LA(V))  &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 5      &mkp LCLK  &mkp RCLK       &kp LG(LA(V))  &mo 4
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp MCLK  &kp LEFT_SHIFT  &trans         &trans
 &trans  &trans  &trans  &trans  &mo 4   &trans  &trans  &trans     &trans     &trans          &trans         &trans
                 &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&window_left_right>, <&scroll_up_down>;
+        };
+
+        SCROLL_L_LAYER {
+            display-name = "right_mouse_scroll_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         mouse_contrall_layer {
@@ -373,21 +384,10 @@
             display-name = "right_mouse_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
-&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&mo 8   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans
-            >;
-        };
-
-        SCROLL_L_LAYER {
-            display-name = "right_mouse_scroll_layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
