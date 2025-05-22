@@ -271,7 +271,7 @@
 
         ei {
             bindings = <&kp LANG2>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
         };
     };
 
