@@ -362,7 +362,7 @@
                 &trans  &trans  &trans  &trans  &trans                &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&window_left_right>, <&scroll_up_down>;
+            sensor-bindings = <&scalling_down_up>, <&scroll_up_down>;
         };
 
         SCROLL_L_LAYER {
