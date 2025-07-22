@@ -273,7 +273,7 @@
 
         screenshot {
             bindings = <&kp LG(LS(NUMBER_4))>;
-            key-positions = <38 37>;
+            key-positions = <37 36>;
         };
 
         screencapture {
@@ -283,17 +283,17 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <38 1>;
+            key-positions = <36 0>;
         };
 
         taskmanager {
             bindings = <&kp LA(LG(ESCAPE))>;
-            key-positions = <38 13>;
+            key-positions = <36 12>;
         };
 
         sleep {
             bindings = <&kp LC(LG(Q))>;
-            key-positions = <26 38>;
+            key-positions = <36 24>;
         };
     };
 
