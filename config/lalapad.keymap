@@ -295,6 +295,11 @@
             bindings = <&kp LC(LG(Q))>;
             key-positions = <36 24>;
         };
+
+        emoji {
+            bindings = <&kp LG(LC(SPACE))>;
+            key-positions = <36 37 38>;
+        };
     };
 
     keymap {
