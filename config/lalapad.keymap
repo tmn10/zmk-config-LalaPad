@@ -298,7 +298,7 @@
 
         emoji {
             bindings = <&kp LG(LC(SPACE))>;
-            key-positions = <36 37 38>;
+            key-positions = <38 39>;
         };
     };
 
@@ -359,11 +359,11 @@
         MOUSE_R_LAYER {
             display-name = "right_mouse_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LG(R)  &trans     &trans          &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mo 5      &mkp LCLK  &mkp RCLK       &mkp MCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &mkp MCLK  &kp LEFT_SHIFT  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans     &trans          &trans     &trans
-                &trans  &trans  &trans  &trans  &trans                &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &trans     &trans          &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &mkp LCLK  &mkp RCLK       &mkp MCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp MCLK  &kp LEFT_SHIFT  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans     &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down_double>;
