@@ -298,7 +298,7 @@
 
         emoji {
             bindings = <&kp LG(LC(SPACE))>;
-            key-positions = <38 39>;
+            key-positions = <39 36>;
         };
     };
 
