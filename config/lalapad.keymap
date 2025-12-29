@@ -242,7 +242,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LC(LA(LG(LEFT)))>, <&kp LA(LG(LC(RIGHT)))>;
 
-            tap-ms = <20>;
+            tap-ms = <200>;
             label = "MOVE_WINDOW";
         };
     };
@@ -321,7 +321,7 @@
             bindings = <
 &lt 2 LC(LS(TAB))       &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W          &kp E                   &kp R                       &mt2 TILDE T                     &kp Y             &kp U         &kp I                 &kp O              &mt2 PERCENT P        &lt 4 LC(TAB)
 &lt 5 TAB               &mt2 AT A            &mt2 HASH S                   &mt2 DOLLAR D           &kp F                       &kp G                            &mt2 QUESTION H   &kp J         &kp K                 &kp L              &kp MINUS             &lt 5 LG(LA(V))
-&mt LEFT_SHIFT LS(TAB)  &kp Z                &kp X                         &kp C                   &kp V                       &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M         &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW          &tog 1
+&mt LEFT_SHIFT LS(TAB)  &kp Z                &kp X                         &kp C                   &kp V                       &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M         &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW          &to 1
 &kp LCTRL               &kp LEFT_ALT         &mt LEFT_SHIFT LANG2          &mt LEFT_COMMAND LANG1  &kp SPACE                   &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &lt 3 LA(SPACE)   &lt2 1 ENTER  &kp BACKSPACE         &mt2 SLASH LEFT    &mt2 PIPE DOWN_ARROW  &mt2 BACKSLASH RIGHT
                                              &mt2 LG(RIGHT_BRACKET) RIGHT  &mt2 PAGE_DOWN DOWN     &mt2 LG(LEFT_BRACKET) LEFT  &mt2 PAGE_UP UP                  &allow_pageup     &allow_back   &allow_pagedown       &allow_front
             >;
@@ -329,13 +329,13 @@
 
         SECONDARY_LAYER {
             display-name = "numpad_layer";
-            sensor-bindings = <&scalling_down_up>, <&scroll_right_left>;
+            sensor-bindings = <&scalling_down_up>, <&scroll_left_right>;
 
             bindings = <
 &none   &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp N7        &kp N8        &kp N9        &kp N0          &kp ASTERISK    &kp EQUAL
 &trans  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &none         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS        &kp MINUS       &kp SLASH
-&trans  &kp LEFT_BRACE    &kp LESS_THAN         &none         &kp GREATER_THAN       &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD      &kp UP_ARROW    &tog 0
-&trans  &trans            &trans                &trans        &trans                 &trans             &trans        &trans        &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans  &kp LEFT_BRACE    &kp LESS_THAN         &none         &kp GREATER_THAN       &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD      &kp UP_ARROW    &to 0
+&trans  &trans            &trans                &trans        &trans                 &trans             &to 0         &trans        &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                           &trans                &trans        &trans                 &trans             &trans        &trans        &trans        &trans
             >;
         };
