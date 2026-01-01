@@ -309,6 +309,11 @@
             bindings = <&kp LG(LC(SPACE))>;
             key-positions = <39 36>;
         };
+
+        sleeo {
+            bindings = <&kp LC(LA(C_POWER))>;
+            key-positions = <36 25>;
+        };
     };
 
     keymap {
