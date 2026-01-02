@@ -310,8 +310,8 @@
             key-positions = <39 36>;
         };
 
-        sleeo {
-            bindings = <&kp LC(LA(C_POWER))>;
+        sleep {
+            bindings = <&kp LC(LA(LG(Q)))>;
             key-positions = <36 25>;
         };
     };
