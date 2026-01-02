@@ -311,7 +311,7 @@
         };
 
         sleep {
-            bindings = <&kp LC(LA(LG(Q)))>;
+            bindings = <&kp LA(LG(K_POWER))>;
             key-positions = <36 25>;
         };
     };
