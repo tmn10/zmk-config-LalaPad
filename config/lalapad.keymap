@@ -321,7 +321,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
 
             bindings = <
 &mt2 LG(LC(LA(LEFT))) LC(LS(TAB))  &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W  &kp E                   &kp R      &mt2 TILDE T                     &kp Y                    &kp U         &kp I                 &kp O              &mt2 PERCENT P        &mt2 LA(LG(LC(RIGHT))) LC(TAB)
@@ -334,7 +334,7 @@
 
         SECONDARY_LAYER {
             display-name = "numpad_layer";
-            sensor-bindings = <&scroll_right_left>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
 
             bindings = <
 &none   &kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp NUMBER_5       &kp NUMBER_6  &kp N7     &kp N8     &kp N9          &kp N0          &trans
