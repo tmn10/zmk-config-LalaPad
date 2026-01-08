@@ -380,8 +380,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans          &trans     &trans
                 &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans
             >;
-
-            sensor-bindings = <&scroll_right_left>, <&scroll_up_down>;
         };
 
         SCROLL_L_LAYER {
