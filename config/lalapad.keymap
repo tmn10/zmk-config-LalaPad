@@ -348,11 +348,11 @@
         KIGOU_LAYER {
             display-name = "window_layer";
             bindings = <
-&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE   &none  &kp TILDE        &none             &none         &none         &none          &kp PERCENT  &none
-&none  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &none  &none            &kp QUESTION      &none         &none         &none          &kp UNDER    &none
-&none  &none             &none              &none       &none  &kp EXCLAMATION  &kp AMPERSAND     &none         &none         &none          &none        &none
-&none  &none             &none              &none       &none  &none            &none             &none         &none         &kp SLASH      &kp PIPE     &kp BACKSLASH
-                         &none              &none       &none  &none            &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
+&none          &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE      &none          &trans  &none             &none         &none         &none          &kp PERCENT  &none
+&kp LA(LC(U))  &kp LA(LC(E))     &trans             &kp LA(LC(T))  &kp LA(LC(I))  &trans  &kp QUESTION      &none         &none         &none          &kp UNDER    &none
+&kp LA(LC(J))  &kp LA(LC(D))     &kp LA(LC(F))      &kp LA(LC(G))  &kp LA(LC(K))  &trans  &kp AMPERSAND     &none         &none         &none          &none        &none
+&none          &none             &none              &none          &none          &none   &none             &none         &none         &kp SLASH      &kp PIPE     &kp BACKSLASH
+                                 &none              &none          &none          &none   &kp LC(UP_ARROW)  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)
             >;
 
             sensor-bindings = <&scalling_down_up>;
