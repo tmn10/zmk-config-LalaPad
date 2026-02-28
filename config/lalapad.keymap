@@ -326,7 +326,7 @@
             bindings = <
 &kp LC(LS(TAB))         &mt2 SINGLE_QUOTE Q  &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E            &kp R        &mt2 TILDE T                     &kp Y             &kp U        &kp I                 &kp O              &mt2 PERCENT P        &kp LC(TAB)
 &kp TAB                 &mt2 AT A            &mt2 HASH S           &mt2 DOLLAR D           &kp F        &kp G                            &mt2 QUESTION H   &kp J        &kp K                 &kp L              &kp MINUS             &kp LG(LA(V))
-&mt LEFT_SHIFT LS(TAB)  &kp Z                &kp X                 &kp C                   &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M        &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW          &kp LG(C)
+&mt LEFT_SHIFT LS(TAB)  &kp Z                &kp X                 &kp C                   &kp V        &mt2 EXCLAMATION B               &mt2 AMPERSAND N  &kp M        &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW          &none
 &kp LCTRL               &kp LEFT_ALT         &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANG1  &lt 3 SPACE  &mt2 LA(LC(LG(L))) LC(UP_ARROW)  &mo 3             &lt 1 ENTER  &kp BACKSPACE         &mt2 SLASH LEFT    &mt2 PIPE DOWN_ARROW  &mt2 BACKSLASH RIGHT
                                              &kp RIGHT             &kp DOWN                &kp LEFT     &kp UP                           &allow_pageup     &allow_back  &allow_pagedown       &allow_front
             >;
